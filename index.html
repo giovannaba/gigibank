@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gigibank</title>
+</head>
+<body>
+    <main class="dados">
+        <header class="cabecalho">
+          <h2 class="titulo">Estes são os detalhes da sua cotação: </h2>
+        </header>
+    
+        <article class="dadosDolar">
+          <div class="grafico">
+            <div class="grafico__titulo">
+              <span class="grafico__ilustracao-dolar"></span>
+              <h2>Variação da moeda desde o login</h2>
+            </div>
+            <canvas id="graficoDolar"></canvas>
+          </div>
+    
+          <div class="investimentos">
+            <h2>Valores da moeda</h2>
+            <ul class="investimentos__lista" id="dolar" data-lista>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="dadosIene">
+          <div class="grafico">
+            <div class="grafico__titulo">
+              <span class="grafico__ilustracao-iene"></span>
+              <h2>Variação da moeda desde o login</h2>
+            </div>
+            <canvas id="graficoIene"></canvas>
+          </div>
+    
+          <div class="investimentos">
+            <h2>Valores da moeda</h2>
+            <ul class="investimentos__lista" id="iene" data-lista>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="dadosEuro">
+          <div class="grafico">
+            <div class="grafico__titulo">
+              <span class="grafico__ilustracao-euro"></span>
+              <h2>Variação da moeda desde o login</h2>
+            </div>
+            <canvas id="graficoEuro"></canvas>
+          </div>
+          <div class="investimentos">
+            <h2>Valores da moeda</h2>
+            <ul class="investimentos__lista" id="euro" data-lista>
+            </ul>
+        </article>
+    
+        <article class="dadosPesoChileno">
+          <div class="grafico">
+            <div class="grafico__titulo">
+              <span class="grafico__ilustracao-pesoChileno"></span>
+              <h2>Variação da moeda desde o login</h2>
+            </div>
+            <canvas id="graficoChileno"></canvas>
+          </div>
+          <div class="investimentos">
+            <h2>Valores da moeda</h2>
+            <ul class="investimentos__lista" id="peso-chileno" data-lista>
+            </ul>
+        </article>
+    
+        <footer class="rodape">
+          <p>Dashboard - Desenvolvido por Giovanna</p>
+        </footer>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="./script/scripts.js" type="module"></script>
+</body>
+</html>
